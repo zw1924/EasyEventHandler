@@ -15,7 +15,7 @@
 		733B6CFC221F8CD60048A819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B6CFB221F8CD60048A819 /* main.m */; };
 		733B6D06221F8CD70048A819 /* EasyEventHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B6D05221F8CD70048A819 /* EasyEventHandlerTests.m */; };
 		733B6D11221F8CD70048A819 /* EasyEventHandlerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B6D10221F8CD70048A819 /* EasyEventHandlerUITests.m */; };
-		73C799D7221F987700B0641B /* UIResponder+EasyEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C799D6221F987700B0641B /* UIResponder+EasyEventHandler.m */; };
+		737DF2E7230CE35C00454A7F /* UIResponder+EasyEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 737DF2E6230CE35C00454A7F /* UIResponder+EasyEventHandler.m */; };
 		73C799DA221F9B4500B0641B /* EventExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C799D9221F9B4500B0641B /* EventExampleView.m */; };
 		73C799E0221FE8D300B0641B /* UITableView+ReuseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C799DF221FE8D300B0641B /* UITableView+ReuseCell.m */; };
 /* End PBXBuildFile section */
@@ -54,8 +54,8 @@
 		733B6D0C221F8CD70048A819 /* EasyEventHandlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyEventHandlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		733B6D10221F8CD70048A819 /* EasyEventHandlerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyEventHandlerUITests.m; sourceTree = "<group>"; };
 		733B6D12221F8CD70048A819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73C799D5221F987700B0641B /* UIResponder+EasyEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+EasyEventHandler.h"; sourceTree = "<group>"; };
-		73C799D6221F987700B0641B /* UIResponder+EasyEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EasyEventHandler.m"; sourceTree = "<group>"; };
+		737DF2E5230CE35C00454A7F /* UIResponder+EasyEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+EasyEventHandler.h"; sourceTree = "<group>"; };
+		737DF2E6230CE35C00454A7F /* UIResponder+EasyEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EasyEventHandler.m"; sourceTree = "<group>"; };
 		73C799D8221F9B4500B0641B /* EventExampleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventExampleView.h; sourceTree = "<group>"; };
 		73C799D9221F9B4500B0641B /* EventExampleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventExampleView.m; sourceTree = "<group>"; };
 		73C799DE221FE8D300B0641B /* UITableView+ReuseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ReuseCell.h"; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 		733B6CE0221F8CD50048A819 = {
 			isa = PBXGroup;
 			children = (
+				737DF2E4230CE35C00454A7F /* Source */,
 				733B6CEB221F8CD50048A819 /* EasyEventHandler */,
 				733B6D04221F8CD70048A819 /* EasyEventHandlerTests */,
 				733B6D0F221F8CD70048A819 /* EasyEventHandlerUITests */,
@@ -110,7 +111,6 @@
 		733B6CEB221F8CD50048A819 /* EasyEventHandler */ = {
 			isa = PBXGroup;
 			children = (
-				733B6D1E221F8CE00048A819 /* EasyEventHandler */,
 				733B6CEC221F8CD50048A819 /* AppDelegate.h */,
 				733B6CED221F8CD50048A819 /* AppDelegate.m */,
 				733B6CEF221F8CD50048A819 /* ViewController.h */,
@@ -146,13 +146,13 @@
 			path = EasyEventHandlerUITests;
 			sourceTree = "<group>";
 		};
-		733B6D1E221F8CE00048A819 /* EasyEventHandler */ = {
+		737DF2E4230CE35C00454A7F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				73C799D5221F987700B0641B /* UIResponder+EasyEventHandler.h */,
-				73C799D6221F987700B0641B /* UIResponder+EasyEventHandler.m */,
+				737DF2E5230CE35C00454A7F /* UIResponder+EasyEventHandler.h */,
+				737DF2E6230CE35C00454A7F /* UIResponder+EasyEventHandler.m */,
 			);
-			path = EasyEventHandler;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +287,8 @@
 			files = (
 				733B6CF1221F8CD50048A819 /* ViewController.m in Sources */,
 				733B6CFC221F8CD60048A819 /* main.m in Sources */,
+				737DF2E7230CE35C00454A7F /* UIResponder+EasyEventHandler.m in Sources */,
 				73C799DA221F9B4500B0641B /* EventExampleView.m in Sources */,
-				73C799D7221F987700B0641B /* UIResponder+EasyEventHandler.m in Sources */,
 				73C799E0221FE8D300B0641B /* UITableView+ReuseCell.m in Sources */,
 				733B6CEE221F8CD50048A819 /* AppDelegate.m in Sources */,
 			);
