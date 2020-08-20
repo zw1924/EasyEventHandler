@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "EventExampleView.h"
 #import "UIResponder+EasyEventHandler.h"
-
+#import "YPEVentViewController.h"
+#import "YPEventHandler.h"
 @interface ViewController ()
 
 @end
@@ -27,6 +28,8 @@
 
 - (void)printHello:(NSDictionary *)userinfo {
     NSLog(@"%@",userinfo[@"msg"]);
+    id obj = [YPEventHandler of:@"YPEVentViewController"];
+    [self presentViewController:[[YPEVentViewController alloc] init] animated:YES completion:nil];
 }
 
 

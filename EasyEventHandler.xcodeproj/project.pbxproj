@@ -18,6 +18,8 @@
 		737DF2E7230CE35C00454A7F /* UIResponder+EasyEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 737DF2E6230CE35C00454A7F /* UIResponder+EasyEventHandler.m */; };
 		73C799DA221F9B4500B0641B /* EventExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C799D9221F9B4500B0641B /* EventExampleView.m */; };
 		73C799E0221FE8D300B0641B /* UITableView+ReuseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C799DF221FE8D300B0641B /* UITableView+ReuseCell.m */; };
+		FE05D89D24EE6580000A69AC /* YPEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FE05D89C24EE6580000A69AC /* YPEventHandler.m */; };
+		FE05DD6D24EE6944000A69AC /* YPEVentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE05DD6C24EE6944000A69AC /* YPEVentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		73C799D9221F9B4500B0641B /* EventExampleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventExampleView.m; sourceTree = "<group>"; };
 		73C799DE221FE8D300B0641B /* UITableView+ReuseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ReuseCell.h"; sourceTree = "<group>"; };
 		73C799DF221FE8D300B0641B /* UITableView+ReuseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ReuseCell.m"; sourceTree = "<group>"; };
+		FE05D89B24EE6580000A69AC /* YPEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPEventHandler.h; sourceTree = "<group>"; };
+		FE05D89C24EE6580000A69AC /* YPEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPEventHandler.m; sourceTree = "<group>"; };
+		FE05DD6B24EE6944000A69AC /* YPEVentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPEVentViewController.h; sourceTree = "<group>"; };
+		FE05DD6C24EE6944000A69AC /* YPEVentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPEVentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 		733B6CE0221F8CD50048A819 = {
 			isa = PBXGroup;
 			children = (
+				FE05D89A24EE6558000A69AC /* EventHandler */,
 				737DF2E4230CE35C00454A7F /* Source */,
 				733B6CEB221F8CD50048A819 /* EasyEventHandler */,
 				733B6D04221F8CD70048A819 /* EasyEventHandlerTests */,
@@ -115,6 +122,8 @@
 				733B6CED221F8CD50048A819 /* AppDelegate.m */,
 				733B6CEF221F8CD50048A819 /* ViewController.h */,
 				733B6CF0221F8CD50048A819 /* ViewController.m */,
+				FE05DD6B24EE6944000A69AC /* YPEVentViewController.h */,
+				FE05DD6C24EE6944000A69AC /* YPEVentViewController.m */,
 				73C799DE221FE8D300B0641B /* UITableView+ReuseCell.h */,
 				73C799DF221FE8D300B0641B /* UITableView+ReuseCell.m */,
 				73C799D8221F9B4500B0641B /* EventExampleView.h */,
@@ -153,6 +162,15 @@
 				737DF2E6230CE35C00454A7F /* UIResponder+EasyEventHandler.m */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		FE05D89A24EE6558000A69AC /* EventHandler */ = {
+			isa = PBXGroup;
+			children = (
+				FE05D89B24EE6580000A69AC /* YPEventHandler.h */,
+				FE05D89C24EE6580000A69AC /* YPEventHandler.m */,
+			);
+			path = EventHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +307,9 @@
 				733B6CFC221F8CD60048A819 /* main.m in Sources */,
 				737DF2E7230CE35C00454A7F /* UIResponder+EasyEventHandler.m in Sources */,
 				73C799DA221F9B4500B0641B /* EventExampleView.m in Sources */,
+				FE05DD6D24EE6944000A69AC /* YPEVentViewController.m in Sources */,
 				73C799E0221FE8D300B0641B /* UITableView+ReuseCell.m in Sources */,
+				FE05D89D24EE6580000A69AC /* YPEventHandler.m in Sources */,
 				733B6CEE221F8CD50048A819 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
